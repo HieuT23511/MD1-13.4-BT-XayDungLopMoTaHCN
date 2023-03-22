@@ -1,12 +1,10 @@
 class creatRectangle {
-    x;
-    y;
+    x=Math.random()*200;
+    y=Math.random()*200;
     width;
     height;
 
-    constructor(x, y, width, height) {
-        this.x = x;
-        this.y = y;
+    constructor(width, height) {
         this.width = width;
         this.height = height;
     }
@@ -36,7 +34,7 @@ class creatRectangle {
     }
 }
 
-let inputRectangle = new creatRectangle(100, 100, 200, 100);
+let inputRectangle = new creatRectangle(200, 100,);
 inputRectangle.getDrawRec();
 inputRectangle.getArea();
 inputRectangle.getPerimeter();
